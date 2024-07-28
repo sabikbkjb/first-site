@@ -19,7 +19,7 @@ function Simple() {
     const Add=async(e)=>{
         e.preventDefault();
         
-        const response = await axios.post(`http://127.0.0.1:3000/adduser`,data);
+        const response = await axios.post(`https://first-site-3.onrender.com/adduser`,data);
         console.log('Form submitted:', response.data);
            const datas=response.data
            console.log(datas)
